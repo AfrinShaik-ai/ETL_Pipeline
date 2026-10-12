@@ -1,0 +1,135 @@
+2026-10-12 18:45:29,805 | INFO | ========== PIPELINE STARTED ==========
+2026-10-12 18:45:29,806 | INFO | Checking source files and required columns
+2026-10-12 18:45:29,811 | INFO | Validated olist_orders_dataset.csv
+2026-10-12 18:45:29,813 | INFO | Validated olist_order_items_dataset.csv
+2026-10-12 18:45:29,816 | INFO | Validated olist_order_payments_dataset.csv
+2026-10-12 18:45:29,817 | INFO | Validated olist_order_reviews_dataset.csv
+2026-10-12 18:45:29,820 | INFO | Validated olist_customers_dataset.csv
+2026-10-12 18:45:29,824 | INFO | Validated olist_sellers_dataset.csv
+2026-10-12 18:45:29,828 | INFO | Validated olist_products_dataset.csv
+2026-10-12 18:45:29,833 | INFO | Validated olist_geolocation_dataset.csv
+2026-10-12 18:45:29,840 | INFO | Validated product_category_name_translation.csv
+2026-10-12 18:45:29,885 | INFO | Loading raw source tables
+2026-10-12 18:45:30,552 | INFO | Loaded raw_orders: 99,441 rows
+2026-10-12 18:45:31,381 | INFO | Loaded raw_order_items: 112,650 rows
+2026-10-12 18:45:31,599 | INFO | Loaded raw_payments: 103,886 rows
+2026-10-12 18:45:31,897 | INFO | Loaded raw_reviews: 99,224 rows
+2026-10-12 18:45:32,544 | INFO | Loaded raw_customers: 99,441 rows
+2026-10-12 18:45:32,567 | INFO | Loaded raw_sellers: 3,095 rows
+2026-10-12 18:45:32,678 | INFO | Loaded raw_products: 32,951 rows
+2026-10-12 18:45:33,476 | INFO | Loaded raw_geolocation: 1,000,163 rows
+2026-10-12 18:45:33,485 | INFO | Loaded raw_category_translation: 71 rows
+2026-10-12 18:45:33,485 | INFO | Building staging tables
+2026-10-12 18:45:33,686 | INFO | Built stg_orders: 99,441 rows
+2026-10-12 18:45:34,621 | INFO | Built stg_customers: 99,441 rows
+2026-10-12 18:45:34,782 | INFO | Built stg_order_items: 112,650 rows
+2026-10-12 18:45:34,841 | INFO | Built stg_payments: 103,886 rows
+2026-10-12 18:45:34,907 | INFO | Built stg_reviews: 99,224 rows
+2026-10-12 18:45:34,927 | INFO | Built stg_products: 32,951 rows
+2026-10-12 18:45:34,939 | INFO | Built stg_sellers: 3,095 rows
+2026-10-12 18:45:35,211 | INFO | Built stg_geolocation: 1,000,163 rows
+2026-10-12 18:45:35,214 | INFO | Built stg_category_translation: 71 rows
+2026-10-12 18:45:35,215 | INFO | Building mart_orders
+2026-10-12 18:45:36,507 | INFO | Built mart_orders with 99,441 rows
+2026-10-12 18:45:36,507 | INFO | Running critical data-quality checks
+2026-10-12 18:45:36,510 | INFO | Quality check: Null order IDs | failing rows: 0
+2026-10-12 18:45:36,536 | INFO | Quality check: Duplicate order IDs | failing rows: 0
+2026-10-12 18:45:36,546 | INFO | Quality check: Delivered before purchase | failing rows: 0
+2026-10-12 18:45:36,575 | INFO | Quality check: Orders without a customer | failing rows: 0
+2026-10-12 18:45:36,576 | INFO | All critical data-quality checks passed
+2026-10-12 18:45:36,610 | INFO | ========== PIPELINE SUCCEEDED ==========
+2026-10-12 18:45:36,610 | INFO | Database saved at: C:\Users\shaik\OneDrive\Documents\Desktop\BDA_Assignment\data\processed\olist.duckdb
+2026-10-12 18:46:39,127 | INFO | ========== PIPELINE STARTED ==========
+2026-10-12 18:46:39,127 | INFO | Checking source files and required columns
+2026-10-12 18:46:39,129 | INFO | Validated olist_orders_dataset.csv
+2026-10-12 18:46:39,130 | INFO | Validated olist_order_items_dataset.csv
+2026-10-12 18:46:39,130 | INFO | Validated olist_order_payments_dataset.csv
+2026-10-12 18:46:39,131 | INFO | Validated olist_order_reviews_dataset.csv
+2026-10-12 18:46:39,131 | INFO | Validated olist_customers_dataset.csv
+2026-10-12 18:46:39,131 | INFO | Validated olist_sellers_dataset.csv
+2026-10-12 18:46:39,132 | INFO | Validated olist_products_dataset.csv
+2026-10-12 18:46:39,132 | INFO | Validated olist_geolocation_dataset.csv
+2026-10-12 18:46:39,132 | INFO | Validated product_category_name_translation.csv
+2026-10-12 18:46:39,150 | INFO | Loading raw source tables
+2026-10-12 18:46:39,345 | INFO | Loaded raw_orders: 99,441 rows
+2026-10-12 18:46:39,904 | INFO | Loaded raw_order_items: 112,650 rows
+2026-10-12 18:46:40,029 | INFO | Loaded raw_payments: 103,886 rows
+2026-10-12 18:46:40,212 | INFO | Loaded raw_reviews: 99,224 rows
+2026-10-12 18:46:41,242 | INFO | Loaded raw_customers: 99,441 rows
+2026-10-12 18:46:41,262 | INFO | Loaded raw_sellers: 3,095 rows
+2026-10-12 18:46:41,376 | INFO | Loaded raw_products: 32,951 rows
+2026-10-12 18:46:42,001 | INFO | Loaded raw_geolocation: 1,000,163 rows
+2026-10-12 18:46:42,008 | INFO | Loaded raw_category_translation: 71 rows
+2026-10-12 18:46:42,008 | INFO | Building staging tables
+2026-10-12 18:46:42,152 | INFO | Built stg_orders: 99,441 rows
+2026-10-12 18:46:42,983 | INFO | Built stg_customers: 99,441 rows
+2026-10-12 18:46:43,145 | INFO | Built stg_order_items: 112,650 rows
+2026-10-12 18:46:43,195 | INFO | Built stg_payments: 103,886 rows
+2026-10-12 18:46:43,250 | INFO | Built stg_reviews: 99,224 rows
+2026-10-12 18:46:43,266 | INFO | Built stg_products: 32,951 rows
+2026-10-12 18:46:43,272 | INFO | Built stg_sellers: 3,095 rows
+2026-10-12 18:46:43,501 | INFO | Built stg_geolocation: 1,000,163 rows
+2026-10-12 18:46:43,504 | INFO | Built stg_category_translation: 71 rows
+2026-10-12 18:46:43,504 | INFO | Building mart_orders
+2026-10-12 18:46:44,716 | INFO | Built mart_orders with 99,441 rows
+2026-10-12 18:46:44,716 | INFO | Running critical data-quality checks
+2026-10-12 18:46:44,720 | INFO | Quality check: Null order IDs | failing rows: 0
+2026-10-12 18:46:44,756 | INFO | Quality check: Duplicate order IDs | failing rows: 0
+2026-10-12 18:46:44,759 | INFO | Quality check: Delivered before purchase | failing rows: 0
+2026-10-12 18:46:44,799 | INFO | Quality check: Orders without a customer | failing rows: 0
+2026-10-12 18:46:44,799 | INFO | All critical data-quality checks passed
+2026-10-12 18:46:44,829 | INFO | ========== PIPELINE SUCCEEDED ==========
+2026-10-12 18:46:44,829 | INFO | Database saved at: C:\Users\shaik\OneDrive\Documents\Desktop\BDA_Assignment\data\processed\olist.duckdb
+2026-10-12 18:52:17,797 | INFO | ========== PIPELINE STARTED ==========
+2026-10-12 18:52:17,798 | INFO | Checking source files and required columns
+2026-10-12 18:52:17,800 | INFO | Validated olist_orders_dataset.csv
+2026-10-12 18:52:17,802 | INFO | Validated olist_order_items_dataset.csv
+2026-10-12 18:52:17,803 | INFO | Validated olist_order_payments_dataset.csv
+2026-10-12 18:52:17,804 | INFO | Validated olist_order_reviews_dataset.csv
+2026-10-12 18:52:17,806 | INFO | Validated olist_customers_dataset.csv
+2026-10-12 18:52:17,807 | INFO | Validated olist_sellers_dataset.csv
+2026-10-12 18:52:17,808 | INFO | Validated olist_products_dataset.csv
+2026-10-12 18:52:17,808 | INFO | Validated olist_geolocation_dataset.csv
+2026-10-12 18:52:17,809 | INFO | Validated product_category_name_translation.csv
+2026-10-12 18:52:17,840 | INFO | Loading raw source tables
+2026-10-12 18:52:18,043 | INFO | Loaded raw_orders: 99,441 rows
+2026-10-12 18:52:18,615 | INFO | Loaded raw_order_items: 112,650 rows
+2026-10-12 18:52:18,733 | INFO | Loaded raw_payments: 103,886 rows
+2026-10-12 18:52:18,909 | INFO | Loaded raw_reviews: 99,224 rows
+2026-10-12 18:52:19,892 | INFO | Loaded raw_customers: 99,441 rows
+2026-10-12 18:52:19,930 | INFO | Loaded raw_sellers: 3,095 rows
+2026-10-12 18:52:20,050 | INFO | Loaded raw_products: 32,951 rows
+2026-10-12 18:52:21,234 | INFO | Loaded raw_geolocation: 1,000,163 rows
+2026-10-12 18:52:21,246 | INFO | Loaded raw_category_translation: 71 rows
+2026-10-12 18:52:21,246 | INFO | Building staging tables
+2026-10-12 18:52:21,444 | INFO | Built stg_orders: 99,441 rows
+2026-10-12 18:52:22,240 | INFO | Built stg_customers: 99,441 rows
+2026-10-12 18:52:22,387 | INFO | Built stg_order_items: 112,650 rows
+2026-10-12 18:52:22,448 | INFO | Built stg_payments: 103,886 rows
+2026-10-12 18:52:22,514 | INFO | Built stg_reviews: 99,224 rows
+2026-10-12 18:52:22,537 | INFO | Built stg_products: 32,951 rows
+2026-10-12 18:52:22,543 | INFO | Built stg_sellers: 3,095 rows
+2026-10-12 18:52:22,776 | INFO | Built stg_geolocation: 1,000,163 rows
+2026-10-12 18:52:22,779 | INFO | Built stg_category_translation: 71 rows
+2026-10-12 18:52:22,779 | INFO | Building mart_orders
+2026-10-12 18:52:23,870 | INFO | Built mart_orders with 99,441 rows
+2026-10-12 18:52:23,870 | INFO | Running SQL data-quality checks
+2026-10-12 18:52:23,873 | INFO | Check: dq_01_null_order_ids.sql | failing rows/groups: 0
+2026-10-12 18:52:23,892 | INFO | Check: dq_02_duplicate_order_ids.sql | failing rows/groups: 0
+2026-10-12 18:52:23,896 | INFO | Check: dq_03_delivery_before_purchase.sql | failing rows/groups: 0
+2026-10-12 18:52:23,931 | INFO | Check: dq_04_missing_customers.sql | failing rows/groups: 0
+2026-10-12 18:52:23,997 | INFO | Check: dq_05_payment_mismatch.sql | failing rows/groups: 260
+2026-10-12 18:52:24,000 | INFO | Check: dq_06_invalid_review_scores.sql | failing rows/groups: 0
+2026-10-12 18:52:24,029 | ERROR | PIPELINE FAILED
+Traceback (most recent call last):
+  File "c:\Users\shaik\OneDrive\Documents\Desktop\BDA_Assignment\src\pipeline.py", line 474, in main
+    with duckdb.connect(str(DB_PATH)) as con:
+         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "c:\Users\shaik\OneDrive\Documents\Desktop\BDA_Assignment\src\pipeline.py", line 478, in main
+    run_critical_checks(con)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\shaik\OneDrive\Documents\Desktop\BDA_Assignment\src\pipeline.py", line 452, in run_critical_checks
+    raise RuntimeError(
+        "DATA QUALITY ALARM: " + "; ".join(failures)
+    )
+RuntimeError: DATA QUALITY ALARM: dq_05_payment_mismatch.sql: 260 failures
